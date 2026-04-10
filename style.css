@@ -1,0 +1,24 @@
+.body {
+    font-family: "Roboto", sans-serif;
+}
+.title{
+line-height: 1.36;
+}
+.button {
+    line-height: 1.875;
+}
+.section-text {
+    line-height: 1.71;
+}
+.a-footer {
+    line-height: 1,71;
+}
+.second-button {
+    line-height: 1,625;
+}
+.main-subtitle {
+    line-height: 2;
+}
+.main-text {
+    line-height: 1,875;
+}
