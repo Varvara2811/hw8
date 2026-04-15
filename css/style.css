@@ -1,34 +1,124 @@
 :root {
     --secondary-color:#2196F3;
     --base-color:#000000;
+    --logo-color:#FFF;
+    --footer-color:#2F303A;
+    --text-color:#212121;
+    --secondary-text-color:#757575;
+    --contacts-color:rgba(255, 255, 255, 0.60);
 }
 .body {
     font-family: "Roboto", sans-serif;
 }
 .header-logo{
+    color: var(--base-color);
+font-family: Raleway;
+font-size: 26px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.78px;
 text-decoration: none;
 }
+.header-span {
+    color: var(--secondary-color);
+}
 .header-nav {
-    text-decoration: none;
+text-decoration: none;
+}
+.hero {
+     background-color: var(--footer-color);
 }
 .hero-title{
 line-height: 1.36;
+flex-shrink: 0;
+color: var(--logo-color);
+text-align: center;
+font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+letter-spacing: 2.64px;
+text-transform: uppercase;
+
 }
 .hero-button {
     line-height: 1.875;
+ background-color: var(--secondary-color);
+ color: var(--logo-color);
+text-align: center;
+font-family: Roboto;
+font-style: normal;
+font-weight: 700;
+letter-spacing: 0.96px;
+}
+.advantages-subtitle {
+    color:var(--text-color)
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.42px;
+text-transform: uppercase;
+
 }
 .advantages-text {
-    line-height: 1.71;
+line-height: 1.71;
+color: var(--secondary-text-color);
+font-family: Roboto;
+font-style: normal;
+font-weight: 400;
+letter-spacing: 0.42px;
+
 }
 .footer-list {
     line-height: 1,71;
 }
-.second-button {
+.main-button {
     line-height: 1,625;
 }
 .main-subtitle {
-    line-height: 2;
+line-height: 2;
+color: var(--text-color);
+font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 36px;
+letter-spacing: 1.08px;
 }
 .main-text {
-    line-height: 1,875;
+line-height: 1,875;
+color: var(--secondary-text-color);
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: 0.48px;
+}
+.footer-logo {
+color: var(--logo-color);
+font-family: Raleway;
+font-size: 26px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.78px;
+
+}
+.footer-span {
+color: var(--secondary-color);
+}
+.footer {
+    background-color: var(--footer-color);
+}
+.footer-contact {
+    color: var(--logo-color);
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.42px;
 }
