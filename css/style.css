@@ -1,16 +1,26 @@
+:root {
+    --secondary-color:#2196F3;
+    --base-color:#000000;
+}
 .body {
     font-family: "Roboto", sans-serif;
 }
-.title{
+.header-logo{
+text-decoration: none;
+}
+.header-nav {
+    text-decoration: none;
+}
+.hero-title{
 line-height: 1.36;
 }
-.button {
+.hero-button {
     line-height: 1.875;
 }
-.section-text {
+.advantages-text {
     line-height: 1.71;
 }
-.address {
+.footer-list {
     line-height: 1,71;
 }
 .second-button {
