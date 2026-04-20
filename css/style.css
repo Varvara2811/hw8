@@ -63,6 +63,7 @@ text-transform: uppercase;
 
 }
 .advantages-text {
+    
 line-height: 1.71;
 color: var(--secondary-text-color);
 font-family: Roboto;
