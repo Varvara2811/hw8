@@ -28,7 +28,6 @@ text-decoration: none;
 }
 .header-link{
 color:var(--text-color);
-font-family: Roboto;
 font-size: 14px;
 font-style: normal;
 font-weight: 500;
@@ -37,7 +36,6 @@ letter-spacing: 0.28px;
 }
 .header-contact{
 color:var(--text-color);
-font-family: Roboto;
 font-size: 14px;
 font-style: normal;
 font-weight: 500;
@@ -46,7 +44,6 @@ letter-spacing: 0.28px;
 }
 .second-contact{
 color:var(--secondary-text-color);
-font-family: Roboto;
 font-size: 14px;
 font-style: normal;
 font-weight: 500;
@@ -61,7 +58,6 @@ line-height: 1.36;
 flex-shrink: 0;
 color: var(--logo-color);
 text-align: center;
-font-family: Roboto;
 font-style: normal;
 font-weight: 900;
 letter-spacing: 2.64px;
@@ -73,14 +69,12 @@ text-transform: uppercase;
  background-color: var(--secondary-color);
  color: var(--logo-color);
 text-align: center;
-font-family: Roboto;
 font-style: normal;
 font-weight: 700;
 letter-spacing: 0.96px;
 }
 .advantages-subtitle {
     color:var(--text-color);
-font-family: Roboto;
 font-size: 14px;
 font-style: normal;
 font-weight: 700;
@@ -91,7 +85,6 @@ text-transform: uppercase;
 .advantages-text {
 line-height: 1.71;
 color: var(--secondary-text-color);
-font-family: Roboto;
 font-style: normal;
 font-weight: 400;
 letter-spacing: 0.42px;
@@ -99,7 +92,6 @@ letter-spacing: 0.42px;
 .work-title{
 color: var(--text-color);
 text-align: center;
-font-family: Roboto;
 font-size: 36px;
 font-style: normal;
 font-weight: 700;
@@ -109,7 +101,6 @@ letter-spacing: 1.08px;
 .team-title{
 color:var(--text-color);
 text-align: center;
-font-family: Roboto;
 font-size: 36px;
 font-style: normal;
 font-weight: 700;
@@ -119,7 +110,6 @@ letter-spacing: 1.08px;
 .team-subtitle{
     color: var(--text-color);
 text-align: center;
-font-family: Roboto;
 font-size: 16px;
 font-style: normal;
 font-weight: 500;
@@ -129,7 +119,6 @@ letter-spacing: 0.48px;
 .team-text{
     color: var(--secondary-text-color);
 text-align: center;
-font-family: Roboto;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
@@ -146,7 +135,6 @@ letter-spacing: 0.48px;
 .main-subtitle {
 line-height: 2;
 color: var(--text-color);
-font-family: Roboto;
 font-size: 18px;
 font-style: normal;
 font-weight: 700;
@@ -156,7 +144,6 @@ letter-spacing: 1.08px;
 .main-text {
 line-height: 1,8;
 color: var(--secondary-text-color);
-font-family: Roboto;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
@@ -181,7 +168,6 @@ color: var(--secondary-color);
 }
 .footer-adress{
     color: var(--logo-color);
-font-family: Roboto;
 font-size: 14px;
 font-style: normal;
 font-weight: 400;
@@ -190,7 +176,6 @@ letter-spacing: 0.42px;
 }
 .footer-contact {
     color: var(--contacts-color);
-font-family: Roboto;
 font-size: 14px;
 font-style: normal;
 font-weight: 400;

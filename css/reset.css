@@ -6,6 +6,16 @@ ul{
    margin: 0;
    padding: 0;
 }
-h1,h2,h3,p{
+h1, h2, h3,p{
     margin: 0;
+}
+img{
+    display: block;
+}
+address{
+    font-style: normal;
+}
+button{
+    cursor: pointer;
+    border: none;
 }
