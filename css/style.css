@@ -13,9 +13,10 @@
 .container{
     width: 1200px;
     padding: 0 15px;
+    outline: 1px solid red;
     margin: 0 auto;
 }
-.header-wrap{
+.header .container{
     display: flex;
     align-items: center;
     justify-content: space-between;
