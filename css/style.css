@@ -34,12 +34,14 @@
 display: flex;
 gap: 50px;
 }
-.header-contact-item{
-    display: flex;
-    margin-left: 50px;
+.header-contacts-list{
+display: flex;
+gap: 50px;
+margin-left: auto;
 }
 .header-logo{
     color: var(--base-color);
+    margin-right: 93px;
 font-family: Raleway;
 font-size: 26px;
 font-style: normal;
