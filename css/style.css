@@ -11,8 +11,7 @@
     font-family: "Roboto", sans-serif;
 }
 .container{
-    width: 1200px;
-    padding: 0 15px;
+    width: 1600px;
     outline: 1px solid red;
     margin: 0 auto;
 }
@@ -83,13 +82,14 @@ letter-spacing: 0.28px;
 .hero{
     display: flex;
     background-color:var(--footer-color);
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 .hero-title{
-    padding-top: 200px;
-    padding-bottom: 280px;
-    width: 696px;
-    height: 120px;
-    margin: 0 auto;
+width: 696px;
+margin: 0 auto;
+margin-bottom: 30px;
+font-size: 44px;
 line-height: 1.36;
 flex-shrink: 0;
 color: var(--logo-color);
@@ -100,30 +100,29 @@ letter-spacing: 2.64px;
 text-transform: uppercase;
 }
 .hero-button {
-    display: flex;
-    flex-direction: column;
-   justify-content: center;
-   margin: 0 auto;
-    width: 216px;
-    height: 50px;
-    display: flex;
-    line-height: 1.8;
- background-color: var(--secondary-color);
- color: var(--logo-color);
-text-align: center;
+display: block;
+margin: 0 auto;
+width: 216.0px;
+height: 50.0px;
+line-height: 1.8;
+background-color: var(--secondary-color);
+color: var(--logo-color);
 font-style: normal;
 font-weight: 700;
 letter-spacing: 0.96px;
 }
+.advantages{
+    display: flex;
+width: 1170.0px;
+margin: 0 auto;
+margin-top: 90px;
+    margin-bottom: 93px;
+}
 .advantages-list{
     display: flex;
     gap: 25px;
-    margin-top: 74px;
-    margin-right: 205px;
-    margin-bottom: 94px;
 }
 .advantages-subtitle {
-    display: flex;
     margin: 0 auto;
     color:var(--text-color);
 font-size: 14px;
@@ -140,8 +139,11 @@ font-style: normal;
 font-weight: 400;
 letter-spacing: 0.42px;
 }
+.work{
+    width: 1170.0px;
+     justify-content: space-between;
+}
 .work-title{
-    display: flex;
     justify-content: center;
 color: var(--text-color);
 text-align: center;
@@ -152,11 +154,11 @@ line-height: normal;
 letter-spacing: 1.08px;
 }
 .work-list{
-    width: 1170px;
-    height: 386px;
     display: flex;
+    width: 1170px;
     margin: 0 auto;
     gap: 30px;
+    justify-content: space-between;
 }
 .work-image{
 width: 370px;
