@@ -11,8 +11,9 @@
     font-family: "Roboto", sans-serif;
 }
 .container{
-    width: 1600px;
-    outline: 1px solid red;
+    width: 1200px;
+     padding-left:15px;
+      padding-right:15px;
     margin: 0 auto;
 }
 .header .container{
@@ -110,6 +111,8 @@ color: var(--logo-color);
 font-style: normal;
 font-weight: 700;
 letter-spacing: 0.96px;
+border-radius: 4px;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 .advantages{
     display: flex;
@@ -138,9 +141,6 @@ color: var(--secondary-text-color);
 font-style: normal;
 font-weight: 400;
 letter-spacing: 0.42px;
-}
-.work{
-    width: 1170.0px;
 }
 .work-title{
 color: var(--text-color);
@@ -176,6 +176,7 @@ letter-spacing: 1.08px;
 }
 .team-list{
     display: flex;
+    gap: 30px;
 }
 .team-image{
     margin-top: 60px;
@@ -263,6 +264,8 @@ color: var(--secondary-color);
 }
 .footer {
     background-color: var(--footer-color);
+    padding-bottom: 60px;
+    padding-top: 60px;
 }
 .footer-adress{
     color: var(--logo-color);
