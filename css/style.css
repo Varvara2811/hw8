@@ -116,10 +116,9 @@ box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 .advantages{
     display: flex;
-width: 1170.0px;
 margin: 0 auto;
-padding-top:104px;
-padding-bottom:103px;
+padding-top:94px;
+padding-bottom:94px;
 }
 .advantages-list{
     display: flex;
@@ -146,7 +145,6 @@ letter-spacing: 0.42px;
 }
 .work{
     padding-bottom:93px;
-    padding-top: 93px;
 }
 .work-title{
 color: var(--text-color);
@@ -156,6 +154,7 @@ font-style: normal;
 font-weight: 700;
 line-height: normal;
 letter-spacing: 1.08px;
+margin-bottom: 50px;
 }
 .work-list{
     display: flex;
@@ -167,12 +166,19 @@ letter-spacing: 1.08px;
 width: 370px;
 height: 294px;
 }
+.team{
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color:#F5F4FA;
+    border-radius: 0 0 4px 4px;
+;
+}
 .team-title{
+    margin-bottom: 50px;
     display: flex;
     justify-content: center;
 color:var(--text-color);
 display: flex;
-margin-top: 94px;
 text-align: center;
 font-size: 36px;
 font-style: normal;
@@ -185,12 +191,10 @@ letter-spacing: 1.08px;
     gap: 30px;
 }
 .team-image{
-    margin-top: 60px;
     width: 270px;
     height: 260px;
 }
 .team-subtitle{
-    margin-top: 29px;
     color: var(--text-color);
 text-align: center;
 font-size: 16px;
@@ -207,19 +211,47 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 letter-spacing: 0.48px;
-margin-bottom: 124px;
+}
+.wrap{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: var(--logo-color);
 }
 .footer-logo{
 width: 145px;
 height: 31px;
 }
 .footer-list {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     line-height: 1,7;
+    gap: 9px;
 }
-.main-button {
+.main-portfolio{
+    margin-bottom: 94px;
+    margin-top: 94px;
+}
+.box{
+      display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+.main-button{
     line-height: 1,6;
+border-radius: 4px;
+background: #F5F4FA;
+color: #212121;
+text-align: center;
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+letter-spacing: 0.48px;
+padding-bottom: 6px;
+padding-top: 6px;
+padding-left: 22px;
+padding-right: 22px;
+margin-bottom: 50px;
 }
 .main-button:hover{
     background-color: var(--secondary-color);
@@ -234,17 +266,25 @@ font-weight: 700;
 line-height: 36px;
 letter-spacing: 1.08px;
 }
+.wrapper{
+    margin-top: 20px;
+    margin-bottom: 19px;
+    margin-left: 23px;
+}
 .main-list{
     display: flex;
-    width: 1200px;
     justify-content: center;
     display: flex;
     margin: 0 auto;
     flex-wrap: wrap;
     gap: 30px;
 }
+.main-item{
+    outline: 1px solid #EEE;
+}
 .main-image{
-    width: 292.5px;
+    width: 370.0px;
+height: 294.0px;
 }
 .main-text {
 line-height: 1,8;
