@@ -202,6 +202,7 @@ font-style: normal;
 font-weight: 500;
 line-height: normal;
 letter-spacing: 0.48px;
+padding-bottom: 10px;
 }
 .team-text{
     color: var(--secondary-text-color);
@@ -236,9 +237,14 @@ height: 31px;
       display: flex;
     justify-content: center;
     gap: 8px;
+margin-bottom: 50px;
 }
 .main-button{
-    line-height: 1,6;
+        padding-bottom: 6px;
+padding-top: 6px;
+padding-left: 22px;
+padding-right: 22px;
+    line-height: 1.6;
 border-radius: 4px;
 background: #F5F4FA;
 color: #212121;
@@ -247,11 +253,6 @@ font-family: Roboto;
 font-style: normal;
 font-weight: 500;
 letter-spacing: 0.48px;
-padding-bottom: 6px;
-padding-top: 6px;
-padding-left: 22px;
-padding-right: 22px;
-margin-bottom: 50px;
 }
 .main-button:hover{
     background-color: var(--secondary-color);
@@ -267,9 +268,10 @@ line-height: 36px;
 letter-spacing: 1.08px;
 }
 .wrapper{
-    margin-top: 20px;
-    margin-bottom: 19px;
-    margin-left: 23px;
+    padding-top: 20px;
+    padding-bottom: 19px;
+    padding-left: 23px;
+    padding-right: 23px;
 }
 .main-list{
     display: flex;
