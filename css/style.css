@@ -30,9 +30,29 @@
     display: flex;
     gap: 50px;
 }
+.header-link:after{
+    content: "";
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color:var(--secondary-color);
+    position: absolute;
+    bottom: -20px;
+    opacity:0;
+    transition-property: opacity;
+    transition-duration: 350ms;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.header-link:hover{
+    color: var(--secondary-color);
+ }
+.header-link:hover::after{
+    opacity: 1;
+}
 .header-item{
 display: flex;
 gap: 50px;
+position: relative;
 }
 .header-contacts-list{
 display: flex;
