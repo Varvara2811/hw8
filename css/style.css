@@ -225,7 +225,7 @@ font-style: normal;
 font-weight: 500;
 line-height: normal;
 letter-spacing: 0.48px;
-padding-bottom: 10px;
+margin-bottom: 10px;
 }
 .team-text{
     color: var(--secondary-text-color);
@@ -252,9 +252,9 @@ height: 31px;
     line-height: 1,7;
     gap: 9px;
 }
-.main-portfolio{
-    margin-bottom: 94px;
-    margin-top: 94px;
+.cards{
+    padding-bottom: 94px;
+    padding-top: 94px;
 }
 .box{
       display: flex;
@@ -289,6 +289,7 @@ font-style: normal;
 font-weight: 700;
 line-height: 36px;
 letter-spacing: 1.08px;
+margin-bottom: 4px;
 }
 .wrapper{
     padding-top: 20px;
