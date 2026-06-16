@@ -17,13 +17,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body class="body">
     <header class="header">
       <div class="container">
-        <a href="./index.html" class="header-logo">Web<span class="header-span">Studio</span></a>
+        <a href="./index.html" class="header-logo" data-aos="fade-right">Web<span class="header-span">Studio</span></a>
         <nav class="header-nav">
           <ul class="header-list">
             <li class="header-item">
@@ -52,13 +53,16 @@
       </div>
     </header>
     <main>
-      <section class="hero">
+      <section class="hero"  data-aos="fade-up"
+     data-aos-duration="3000">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
           <button class="hero-button">Замовити послугу</button>
         </div>
       </section>
-      <section class="advantages">
+      <section class="advantages" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
         <div class="container">
           <ul class="advantages-list">
             <li class="advantages-item">
@@ -91,7 +95,9 @@
           </ul>
         </div>
       </section>
-      <section class="work">
+      <section class="work" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
         <div class="container">
           <h2 class="work-title">Чим ми займаємося</h2>
           <ul class="work-list">
@@ -119,7 +125,9 @@
           </ul>
         </div>
       </section>
-      <section class="team">
+      <section class="team" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
         <div class="container">
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list">
@@ -171,7 +179,8 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom">
       <div class="container">
         <a href="./index.html" class="footer-logo"
           ><span class="footer-span">Web</span>Studio</a
@@ -189,5 +198,9 @@
         </address>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
   </body>
 </html>
