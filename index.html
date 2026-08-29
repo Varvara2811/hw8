@@ -25,10 +25,10 @@
     <header class="header">
       <div class="container">
         <a href="./index.html" class="header-logo" data-aos="fade-right">Web<span class="header-span">Studio</span></a>
-        <nav class="header-nav" id="nav">
+        <nav class="header-nav">
           <ul class="header-list">
             <li class="header-item">
-              <a href="#" class="header-link" data-modal-open>Студія</a>
+              <a href="#" class="header-link">Студія</a>
             </li>
             <li class="header-item">
               <a href="./portfolio.html" class="header-link">Портфоліо</a>
@@ -50,11 +50,6 @@
             >
           </li>
         </ul>
-        <button class="burger-btn" id="burger-btn" aria-label="Відкрити меню"> 
-<span class="burger-line"></span> 
-<span class="burger-line"></span> 
-<span class="burger-line"></span> 
-</button> 
       </div>
     </header>
     <main>
@@ -62,7 +57,7 @@
      data-aos-duration="3000">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="hero-button">Замовити послугу</button>
+          <button class="hero-button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <section class="advantages" data-aos="fade-right"
@@ -239,6 +234,11 @@
     </form>
     <button class="modal-button">Відправити</button>
     </div>
+</div>
+<div data-modal class="backdrop is-hidden">
+  <div class="modal">
+    <button class="close" data-modal-close>X</button>
+  </div>
 </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
