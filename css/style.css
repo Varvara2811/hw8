@@ -537,6 +537,20 @@ display: block;
 .modal-link{
   padding-bottom: 30px;
 }
+.checkbox-inp{
+  font-family: Roboto;
+   font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.40px;
+color: var(--secondary-text-color);
+ margin-top: 12px;
+ margin-bottom: 12px;
+}
+.close{
+  font-size: 15px;
+}
 /* МОБІЛКА */
 
 @media (min-width: 480px) {
@@ -676,5 +690,9 @@ display: block;
 .main-list {
  display: grid;
  grid-template-columns: repeat(3,1fr);
+}
+.modal{
+width: 528px;
+height: 581px;
 }
 }
