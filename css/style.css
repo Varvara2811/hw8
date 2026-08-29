@@ -363,12 +363,9 @@
   padding-left: 23px;
   padding-right: 23px;
 }
-
  .main-list {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  flex-direction: column;
+ display: grid;
+  grid-template-columns: 100%;
   gap: 30px;
 }
 .main-item {
@@ -380,10 +377,8 @@
   left: 0;
   background-color: rgba(33, 150, 243, 0.9);
   width: 100%;
-  height: 100%;
-  width: 370px;
+  height: auto;
   opacity: 0;
-  height: 294px;
   padding-bottom: 63px;
   padding-top: 63px;
   padding-left: 33px;
@@ -409,7 +404,7 @@
   height: auto;
 }
 .main-text {
-  line-height: 1, 8;
+  line-height: 1,8;
   color: var(--secondary-text-color);
   font-size: 16px;
   font-style: normal;
@@ -567,6 +562,9 @@ color: var(--secondary-text-color);
    margin-left: 276px;
  }
                                      /* ПОРТФОЛИО */
+                                     .main-list {
+ grid-template-columns: repeat(1,1fr);
+}
 }
 
 /* ПЛАНШЕТ */
@@ -690,6 +688,7 @@ display: block;
 .main-list {
  display: grid;
  grid-template-columns: repeat(3,1fr);
+ justify-content: center;
 }
 .modal{
 width: 528px;
