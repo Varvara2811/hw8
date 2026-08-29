@@ -58,6 +58,42 @@
   display: none;
   margin-left: auto;
 }
+/* Бургер — прихований на десктопі */
+.burger-btn {
+ display: flex;
+ flex-direction: column;
+ gap: 5px;
+ background: none;
+ border: none;
+ cursor: pointer;
+ padding: 4px;
+}
+
+.burger-line {
+ display: block;
+ width: 24px;
+ height: 2px;
+ background: #333;
+ transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* === КНОПКИ === */
+.btn {
+ display: inline-block;
+ padding: 12px 28px;
+ border-radius: 8px;
+ font-size: 15px;
+ font-weight: 600;
+ cursor: pointer;
+ border: none;
+ transition: opacity 0.2s;
+}
+
+.btn:hover { opacity: 0.85; }
+
+.btn-primary { background: #e75c35; color: #fff; }
+.btn-secondary { background: transparent; color: #e75c35; border: 2px solid #e75c35; }
+
 .header-logo {
   color: var(--base-color);
   margin-right: auto;
@@ -450,7 +486,93 @@
   line-height: 24px;
   letter-spacing: 0.42px;
 }
-
+.backdrop{
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.modal{
+  width: 450.0px;
+height: 609.0px;
+  background-color: #fff;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+  transform: translate(-50%,-50%);
+  transition-property: transform;
+  transition-duration: 600ms;
+  padding: 40px;
+}
+.is-hidden{
+opacity: 0;
+  pointer-events: none;
+}
+.close{
+  font-size: 10px;
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  background-color: transparent;
+  border: none;
+}
+.is-hidden .modal{
+  transform: translate(-50%,-900px)scale(0.3);
+}
+.modal-title{
+  color: var(--text-color);
+text-align: center;
+font-size: 20px;
+font-weight: 700;
+line-height: 30px;
+letter-spacing: 0.6px;
+width: 370.0px;
+}
+.modal-form{
+  display: flex;
+  flex-direction: column;
+}
+.modal-label{
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.40px;
+  color: var(--secondary-text-color);
+ margin-top: 12px;
+}
+.modal-input{
+   padding-top: 15px;
+   outline: 1px (--secondary-text-color);
+}
+textarea{
+  padding-bottom: 80px;
+  resize: none;
+}
+.modal-button{
+color: var(--logo-color);
+text-align: center;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 30px;
+letter-spacing: 0.96px;
+padding: 10px 52px;
+background-color: var(--secondary-color);
+color: var(--logo-color);
+border-radius: 4px;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+margin: auto;
+display: block;
+}
+.modal-link{
+  padding-bottom: 30px;
+}
 /* МОБІЛКА */
 
 @media (min-width: 480px) {
@@ -463,6 +585,36 @@
   .advantages-item{
     width: 450px;
   }
+/* Показуємо бургер */
+ .burger-btn {
+   display: flex;
+ }
+/* Відкрите меню */
+ .header-nav.is-open .header-list {
+   display: flex;
+   flex-direction: column;
+   position: absolute;
+   top: 60px;
+   left: 0;
+   width: 100%;
+   padding: 16px 20px;
+   background: #fff;
+   box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+   z-index: 100;
+   gap: 0;
+ }
+/* Анімація бургер → хрестик */
+ .header-nav.is-open ~ .burger-btn .burger-line:nth-child(1) {
+   transform: translateY(7px) rotate(45deg);
+ }
+
+ .header-nav.is-open ~ .burger-btn .burger-line:nth-child(2) {
+   opacity: 0;
+ }
+
+ .header-nav.is-open ~ .burger-btn .burger-line:nth-child(3) {
+   transform: translateY(-7px) rotate(-45deg);
+ }
 
                                      /* ПОРТФОЛИО */
 }
@@ -479,8 +631,8 @@
     padding-bottom: 21px;
   }
   .header-logo {
-    margin-right: 88px;
-  }
+    margin-right: 88px;}
+
   .header-nav {
     display: block;
   }
@@ -510,6 +662,37 @@
  display: grid;
  grid-template-columns: repeat(2,1fr);
 }
+/* Показуємо бургер */
+ .burger-btn {
+   display: flex;
+ }
+/* Відкрите меню */
+ .header-nav.is-open .header-list {
+   display: flex;
+   flex-direction: column;
+   position: absolute;
+   top: 60px;
+   left: 0;
+   width: 100%;
+   padding: 16px 20px;
+   background: #fff;
+   box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+   z-index: 100;
+   gap: 0;
+ }
+/* Анімація бургер → хрестик */
+ .header-nav.is-open ~ .burger-btn .burger-line:nth-child(1) {
+   transform: translateY(7px) rotate(45deg);
+ }
+
+ .header-nav.is-open ~ .burger-btn .burger-line:nth-child(2) {
+   opacity: 0;
+ }
+
+ .header-nav.is-open ~ .burger-btn .burger-line:nth-child(3) {
+   transform: translateY(-7px) rotate(-45deg);
+ }
+
 }
 
 /* ДЕСТОП */
@@ -589,4 +772,7 @@ display: block;
  display: grid;
  grid-template-columns: repeat(3,1fr);
 }
+ .burger-btn {
+   opacity: 0;
+ }
 }

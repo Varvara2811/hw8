@@ -25,10 +25,10 @@
     <header class="header">
       <div class="container">
         <a href="./index.html" class="header-logo" data-aos="fade-right">Web<span class="header-span">Studio</span></a>
-        <nav class="header-nav">
+        <nav class="header-nav" id="nav">
           <ul class="header-list">
             <li class="header-item">
-              <a href="./index.html" class="header-link">Студія</a>
+              <a href="#" class="header-link" data-modal-open>Студія</a>
             </li>
             <li class="header-item">
               <a href="./portfolio.html" class="header-link">Портфоліо</a>
@@ -50,6 +50,11 @@
             >
           </li>
         </ul>
+        <button class="burger-btn" id="burger-btn" aria-label="Відкрити меню"> 
+<span class="burger-line"></span> 
+<span class="burger-line"></span> 
+<span class="burger-line"></span> 
+</button> 
       </div>
     </header>
     <main>
@@ -200,9 +205,46 @@
       </div>
       </div>
     </footer>
+    <div data-modal class="backdrop is-hidden">
+  <div class="modal">
+    <button class="close" data-modal-close>X</button>
+    <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+    <form class="modal-form">
+<label class="modal-label">
+  Ім'я
+  <input type="text" class="modal-input">
+</label>
+
+
+<label class="modal-label">
+  Телефон
+  <input type="tel" class="modal-input">
+</label>
+
+
+<label class="modal-label">
+ Пошта
+ <input type="email" class="modal-input">
+</label>
+
+
+<label class="modal-label">
+  Коментар
+  <textarea name="comment" class="modal-label" placeholder="Введіть текст"></textarea>
+</label>
+
+
+<label class="modal-label">
+  <input type="checkbox">Погоджуюся з розсилкою та приймаю<a href="#" class="modal-link">Умови договору</a></label>
+    </form>
+    <button class="modal-button">Відправити</button>
+    </div>
+</div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
   AOS.init();
 </script>
+<script type="module" src="./mobile-menu.js"></script>
+<script type="mobile-menu" src="./burger-menu.js"></script>
   </body>
 </html>
