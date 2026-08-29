@@ -363,6 +363,9 @@
   padding-left: 23px;
   padding-right: 23px;
 }
+.content-wrapper{
+  overflow: hidden;
+}
  .main-list {
  display: grid;
   grid-template-columns: 100%;
@@ -378,7 +381,6 @@
   background-color: rgba(33, 150, 243, 0.9);
   width: 100%;
   height: auto;
-  opacity: 0;
   padding-bottom: 63px;
   padding-top: 63px;
   padding-left: 33px;
@@ -390,10 +392,12 @@
   font-weight: 400;
   line-height: 28px;
   letter-spacing: 0.54px;
+ transform: translateY(600px);
+  transition: transform 0.6s ease;
 }
 .main-item:hover {
   .text {
-    opacity: 1;
+transform: translateY(0);
   }
 }
 .content-wrapper {
