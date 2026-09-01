@@ -741,8 +741,8 @@ height: 581px;
  transition: opacity 0.2s;
 }
 .burger-modal{
- width: 480.0px;
-height: 796.0px;
+ width: 100%;
+height: auto;
 background-color: white;
  position: fixed;
  top: 50%;
