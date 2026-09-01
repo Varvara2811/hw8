@@ -50,6 +50,11 @@
             >
           </li>
         </ul>
+        <button burger-modal-open class="burger-btn" aria-label="Відкрити меню"> 
+<span class="burger-line"></span> 
+<span class="burger-line"></span> 
+<span class="burger-line"></span> 
+</button> 
       </div>
     </header>
     <main>
@@ -238,11 +243,49 @@
     <button class="close" data-modal-close>X</button>
   </div>
 </div>
+
+
+ <div burger-modal class="second-backdrop is-hidden">
+  <div class="burger-modal">
+      <button burger-modal-close class="bg-close">X</button>
+    <ul class="burger-list">
+            <li class="burg-item">
+              <a href="#" class="burger-link">Студія</a>
+            </li>
+            <li class="burg-item">
+              <a href="./portfolio.html" class="burger-link">Портфоліо</a>
+            </li>
+            <li class="burg-item">
+              <a href="#" class="burger-link">Контакти</a>
+            </li>
+          </ul>
+
+
+          <ul class="bg-list">
+            <li class="bg-item">
+            <a href="tel:+380961111111" class="bg-contact"
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <li class="bg-item">
+            <a href="#" class="bg-contact"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+
+  </div>
+</div>
+
+
+
+
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
   AOS.init();
 </script>
 <script type="module" src="./mobile-menu.js"></script>
-<script type="mobile-menu" src="./burger-menu.js"></script>
+<script type="module" src="./burger-menu.js"></script>
   </body>
 </html>

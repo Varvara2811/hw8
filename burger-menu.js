@@ -1,29 +1,12 @@
-// const menuOpen = document.querySelector('.menu-open');
-// const nav = document.querySelector('.header-nav');
-// menuOpen.addEventListener('click', () => {
-//     nav.classList.add('is-open');
-// });
-// const menuClose = document.querySelector('.menu-close');
-// menuClose.addEventListener('click', () =>{
-//     nav.classList.remove('.is-open')
-// })
-const menuOpen = document.querySelector('.menu-open');
-const nav = document.querySelector('.header-nav');
+const openBurgerBtn = document.querySelector('[burger-modal-open]');
+const burgerBackdrop = document.querySelector('[burger-modal]');
+const closeBurgerBtn = document.querySelector('[burger-modal-close]');
 
-menuOpen.addEventListener('click', () => {
-    nav.classList.add('is-open');
+openBurgerBtn.addEventListener('click', () => {
+  burgerBackdrop.classList.remove('is-hidden');
 });
-const menuClose = document.querySelector('.menu-close');
 
-menuClose.addEventListener('click', () => {
-    nav.classList.remove('is-open');
+closeBurgerBtn.addEventListener('click', () => {
+  burgerBackdrop.classList.add('is-hidden');
 });
-const backdrop = document.querySelector('.menu-backdrop');
-menuOpen.addEventListener('click', () => {
-    nav.classList.add('is-open');
-    backdrop.classList.add('is-open');
-});
-menuClose.addEventListener('click', () => {
-    nav.classList.remove('is-open');
-    backdrop.classList.remove('is-open');
-});
+console.log('Я тут');
