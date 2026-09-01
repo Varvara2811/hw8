@@ -462,8 +462,8 @@ transform: translateY(0);
   left: 0;
 }
 .modal{
-  width: 450.0px;
-height: 609.0px;
+  width: 100%;
+height: auto;
   background-color: #fff;
  position: absolute;
  top: 50%;
