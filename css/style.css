@@ -621,6 +621,10 @@ color: var(--secondary-text-color);
  .burger-btn{
   margin-left: 0px;
 }
+.modal{
+  width: 450.0px;
+height: 609.0px;
+}
 }
 
 /* ДЕСТОП */
