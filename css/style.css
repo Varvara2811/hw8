@@ -625,6 +625,10 @@ color: var(--secondary-text-color);
   width: 450.0px;
 height: 609.0px;
 }
+.burger-btn{
+  display: none;
+  visibility: hidden;
+}
 }
 
 /* ДЕСТОП */
