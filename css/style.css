@@ -15,7 +15,7 @@
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 .header .container {
   display: flex;
@@ -105,7 +105,13 @@
 }
 .hero {
   display: flex;
-  background-color: var(--footer-color);
+  /* background-color: var(--footer-color); */
+  background: 
+  linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)),
+  url(../images/hero-img.svg);
+   background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   padding-top: 118px;
   padding-bottom: 118px;
 }
@@ -157,6 +163,7 @@
   animation-name: BigButton;
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
   animation-duration: 1300ms;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 @keyframes BigButton {
   0% {
@@ -256,7 +263,10 @@
   grid-template-columns: 100%;
   gap: 30px;
 }
-
+.team-item{
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px 0 rgba(0, 0, 0, 0.20);
+}
 .team-subtitle {
   color: var(--text-color);
   text-align: center;
@@ -343,9 +353,15 @@
     opacity: 1;
   }
 }
-.main-button:hover {
+.main-button:hover{
+  transition: transform,box-shadow;
+  transition-duration: 250ms;
+  transform: scale(1.05);
+  transition-timing-function: ease;
   background-color: var(--secondary-color);
   color: var(--logo-color);
+  border-radius: 4px;
+  box-shadow: 0 3px 1px 0 rgba(0, 0, 0, 0.10), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 2px 2px 0 rgba(0, 0, 0, 0.12);
 }
 .main-subtitle {
   line-height: 2;
@@ -373,6 +389,13 @@
 }
 .main-item {
   outline: 1px solid #eee;
+}
+.main-item:hover{
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 1px 4px 6px 0 rgba(0, 0, 0, 0.16);
+ transition: box-shadow,transform;
+ transform: scale(1.2);
+  transition-duration: 300ms;
+  transition-timing-function: ease;
 }
 .text {
   position: absolute;
@@ -472,6 +495,7 @@ height: auto;
   transition-property: transform;
   transition-duration: 600ms;
   padding: 40px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px 0 rgba(0, 0, 0, 0.20);
 }
 .is-hidden{
 opacity: 0;
@@ -552,7 +576,8 @@ color: var(--secondary-text-color);
  margin-bottom: 12px;
 }
 .close{
-  font-size: 15px;
+  font-size: 25px;
+  font-weight: 600;
 }
 /* МОБІЛКА */
 
