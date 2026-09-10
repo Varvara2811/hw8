@@ -105,15 +105,31 @@
 }
 .hero {
   display: flex;
-  /* background-color: var(--footer-color); */
+  background-color: var(--footer-color);
   background: 
   linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)),
-  url(../images/hero-img.svg);
+  url(../images/mobile/hero-mobile@1x.webp);
    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
   padding-top: 118px;
   padding-bottom: 118px;
+}
+.hero-section {
+  min-height: 60vh;
+background: 
+  linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)),
+  url(../images/mobile/hero-mobile@2x.webp);
+  background-size: cover;
+  background-position: center;
+}
+@media (min-device-pixel-ratio: 2),
+       (-webkit-min-device-pixel-ratio: 2),
+       (min-resolution: 192dpi),
+       (min-resolution: 2dppx) {
+  .hero{
+    background-image: url(../images/mobile/hero-mobile@2x.webp);
+  }
 }
 .hero-title {
   width: 100%;
@@ -654,6 +670,19 @@ height: 609.0px;
   display: none;
   visibility: hidden;
 }
+.hero{
+  background: 
+  linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)),
+  url(../images/tablet/hero-tablet@1x.webp);
+}
+@media (min-device-pixel-ratio: 2),
+       (-webkit-min-device-pixel-ratio: 2),
+       (min-resolution: 192dpi),
+       (min-resolution: 2dppx) {
+  .hero{
+    background-image: url(../images/tablet/hero-tablet@2x.webp);
+  }
+}
 }
 
 /* ДЕСТОП */
@@ -682,6 +711,9 @@ height: 609.0px;
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
+  background: 
+  linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)),
+  url(../images/destop/hero-destop@1x.webp);
   }
   .hero-title {
     width: 696px;
@@ -741,6 +773,14 @@ height: 581px;
 .burger-btn{
   display: none;
   visibility: hidden;
+}
+@media (min-device-pixel-ratio: 2),
+       (-webkit-min-device-pixel-ratio: 2),
+       (min-resolution: 192dpi),
+       (min-resolution: 2dppx) {
+  .hero{
+    background-image: url(../images/destop/hero-destop@2x.webp);
+  }
 }
 }
                              /* Бургер */
