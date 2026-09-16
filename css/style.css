@@ -597,215 +597,7 @@ color: var(--secondary-text-color);
   font-size: 25px;
   font-weight: 600;
 }
-/* МОБІЛКА */
-
-@media (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
-  .hero-title {
-    width: 360px;
-  }
-  .advantages-item{
-    width: 450px;
-  }
-                                     /* ПОРТФОЛИО */
-                                     .main-list {
- grid-template-columns: repeat(1,1fr);
-}
-.burger-btn{
-  margin-left: 276px;
-}
-.client-list{
- flex-direction: column;  
- flex-wrap: wrap;
-}
-}
-
-/* ПЛАНШЕТ */
-
-@media (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-  .header {
-    display: flex;
-    padding-top: 21px;
-    padding-bottom: 21px;
-  }
-  .header-logo {
-    margin-right: 88px;}
-
-  .header-nav {
-    display: block;
-  }
-  .header-contacts-list {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  .advantages-item{
-    width: 354px;
-  }
-  .advantages-subtitle{
-    text-align: start;
-  }
-  .team-list{
-   grid-template-columns: repeat(2,1fr);
-  }
-
-                                     /* ПОРТФОЛИО */
-  .box {
-    flex-wrap: nowrap;
-    display: flex;
-  margin-bottom: 50px;
-  justify-content: center;
-}
-.main-list {
- display: grid;
- grid-template-columns: repeat(2,1fr);
-}
- .burger-btn{
-  margin-left: 0px;
-}
-.modal{
-  width: 450.0px;
-height: 609.0px;
-}
-.burger-btn{
-  display: none;
-  visibility: hidden;
-}
-.hero{
-  background: 
-  linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)),
-  url(../images/tablet/hero-tablet@1x.webp);
-}
-@media (min-device-pixel-ratio: 2),
-       (-webkit-min-device-pixel-ratio: 2),
-       (min-resolution: 192dpi),
-       (min-resolution: 2dppx) {
-  .hero{
-    background-image: url(../images/tablet/hero-tablet@2x.webp);
-  }
-}
-.client-item{
-   width: calc(100% / 3);
-}
-}
-
-/* ДЕСТОП */
-
-@media (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
-  .header {
-    display: flex;
-    padding-top: 24px;
-    padding-bottom: 25px;
-  }
-  .header-logo {
-    font-size: 26px;
-    letter-spacing: 0.78px;
-    margin-right: 93px;
-  }
-  .header-contacts-list {
-    flex-direction: row;
-    gap: 30px;
-  }
-
-  /* СЕКЦІЯ ГЕРОЙ */
-
-  .hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
-  background: 
-  linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)),
-  url(../images/destop/hero-destop@1x.webp);
-  }
-  .hero-title {
-    width: 696px;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 2.64px;
-  }
-  .hero-button {
-    width: 216px;
-  }
-
-  /* ADVANTAGES */
-
-  .advantages {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-.advantages-item{
-    width: 270px;
-  }
-  /* WORK */
-  .work{
-display: block;
-  }
-  /* TEAM */
-  .team{
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-  .team-title{
-    margin-bottom: 30px;
-    font-size: 36px;
-    letter-spacing: 1.08px;
-  }
-    .team-list{
-   grid-template-columns: repeat(4,1fr);
-  }
-  .footer-box{
-  text-align: start;
-}
-
-                                    /* ПОРТФОЛИО */
-.cards {
-  padding-bottom: 94px;
-  padding-top: 94px;
-}
-.main-list {
- display: grid;
- grid-template-columns: repeat(3,1fr);
- justify-content: center;
-}
-.modal{
-width: 528px;
-height: 581px;
-}
-.burger-btn{
-  display: none;
-  visibility: hidden;
-}
-@media (min-device-pixel-ratio: 2),
-       (-webkit-min-device-pixel-ratio: 2),
-       (min-resolution: 192dpi),
-       (min-resolution: 2dppx) {
-  .hero{
-    background-image: url(../images/destop/hero-destop@2x.webp);
-  }
-}
-.clients .container{
-  padding: 94px 0;
-}
- .client-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-  }
-.client-item {
-    width: calc(100% / 6);
-  }
-.footer-form{
-  flex-direction: row;
-}
-}
-                             /* Бургер */
+                        /* Бургер */
 .burger-btn {
  display: flex;
  flex-direction: column;
@@ -982,12 +774,18 @@ fill: var(--secondary-color);
 .client-item:nth-child(4){
 padding: 25px 43px;
 }
-.client-list{
+/* .client-list{
   display: flex;
   margin: 0 auto;
- /* flex-direction: column;
-  flex-wrap: wrap; */
+ flex-direction: column;
+  flex-wrap: wrap;
   gap: 30px;
+} */
+.client-list{
+      display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    gap: 30px;
 }
                       /* TEAM-ICONS */
 .team-icon{
@@ -1063,10 +861,13 @@ gap: 25px;
 }
 .footer .container{
 display: flex;
+flex-wrap: wrap;
+justify-content: center;
 gap: 75px;
 }
 .footer-form{
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
 gap: 12px;
 }
@@ -1090,7 +891,7 @@ box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 padding-top: 15px;
 padding-bottom: 15px;
 padding-left: 16px;
-padding-right: 295px;
+width: 450.0px;
 }
 .footer-btn{
   color: var(--logo-color);
@@ -1118,3 +919,208 @@ box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 height: 24.0px;
 text-align: center;
 }
+/* МОБІЛКА */
+
+@media (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+  .hero-title {
+    width: 360px;
+  }
+  .advantages-item{
+    width: 450px;
+  }
+                                     /* ПОРТФОЛИО */
+                                     .main-list {
+ grid-template-columns: repeat(1,1fr);
+}
+.burger-btn{
+  margin-left: 276px;
+}
+.client-list{
+ flex-direction: column;  
+ flex-wrap: wrap;
+}
+}
+
+/* ПЛАНШЕТ */
+
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+  .header {
+    display: flex;
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+  .header-logo {
+    margin-right: 88px;}
+
+  .header-nav {
+    display: block;
+  }
+  .header-contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .advantages-item{
+    width: 354px;
+  }
+  .advantages-subtitle{
+    text-align: start;
+  }
+  .team-list{
+   grid-template-columns: repeat(2,1fr);
+  }
+
+                                     /* ПОРТФОЛИО */
+  .box {
+    flex-wrap: nowrap;
+    display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+.main-list {
+ display: grid;
+ grid-template-columns: repeat(2,1fr);
+}
+ .burger-btn{
+  margin-left: 0px;
+}
+.modal{
+  width: 450.0px;
+height: 609.0px;
+}
+.burger-btn{
+  display: none;
+  visibility: hidden;
+}
+.hero{
+  background: 
+  linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)),
+  url(../images/tablet/hero-tablet@1x.webp);
+}
+@media (min-device-pixel-ratio: 2),
+       (-webkit-min-device-pixel-ratio: 2),
+       (min-resolution: 192dpi),
+       (min-resolution: 2dppx) {
+  .hero{
+    background-image: url(../images/tablet/hero-tablet@2x.webp);
+  }
+}
+}
+
+/* ДЕСТОП */
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+  .header {
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+  .header-logo {
+    font-size: 26px;
+    letter-spacing: 0.78px;
+    margin-right: 93px;
+  }
+  .header-contacts-list {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  /* СЕКЦІЯ ГЕРОЙ */
+
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  background: 
+  linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)),
+  url(../images/destop/hero-destop@1x.webp);
+  }
+  .hero-title {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 2.64px;
+  }
+  .hero-button {
+    width: 216px;
+  }
+
+  /* ADVANTAGES */
+
+  .advantages {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.advantages-item{
+    width: 270px;
+  }
+  /* WORK */
+  .work{
+display: block;
+  }
+  /* TEAM */
+  .team{
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .team-title{
+    margin-bottom: 30px;
+    font-size: 36px;
+    letter-spacing: 1.08px;
+  }
+    .team-list{
+   grid-template-columns: repeat(4,1fr);
+  }
+  .footer-box{
+  text-align: start;
+}
+
+                                    /* ПОРТФОЛИО */
+.cards {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+.main-list {
+ display: grid;
+ grid-template-columns: repeat(3,1fr);
+ justify-content: center;
+}
+.modal{
+width: 528px;
+height: 581px;
+}
+.burger-btn{
+  display: none;
+  visibility: hidden;
+}
+@media (min-device-pixel-ratio: 2),
+       (-webkit-min-device-pixel-ratio: 2),
+       (min-resolution: 192dpi),
+       (min-resolution: 2dppx) {
+  .hero{
+    background-image: url(../images/destop/hero-destop@2x.webp);
+  }
+}
+.clients .container{
+  padding: 94px 0;
+}
+   .client-list{
+          display: grid;
+  grid-template-columns: repeat(6,1fr);
+   }
+.footer-form{
+  flex-direction: row;
+}
+.footer-input{
+  width: 342px;
+}
+}
+     
