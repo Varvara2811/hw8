@@ -18,34 +18,35 @@
       referrerpolicy="no-referrer"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <!-- <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" /> -->
+<link rel="stylesheet" href="./style/main.min.css">
   </head>
   <body class="body">
     <header class="header">
       <div class="container">
-        <a href="./index.html" class="header-logo" data-aos="fade-right">Web<span class="header-span">Studio</span></a>
-        <nav class="header-nav">
-          <ul class="header-list">
-            <li class="header-item">
-              <a href="#" class="header-link">Студія</a>
+        <a href="./index.html" class="header__logo" data-aos="fade-right">Web<span class="header-span">Studio</span></a>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="#" class="header__link">Студія</a>
             </li>
-            <li class="header-item">
-              <a href="./portfolio.html" class="header-link">Портфоліо</a>
+            <li class="header__item">
+              <a href="./portfolio.html" class="header__link">Портфоліо</a>
             </li>
-            <li class="header-item">
-              <a href="#" class="header-link">Контакти</a>
+            <li class="header__item">
+              <a href="#" class="header__link">Контакти</a>
             </li>
           </ul>
         </nav>
-        <ul class="header-contacts-list">
-          <li class="header-contact-item">
-            <a href="#" class="second-contact"
+        <ul class="header__contacts__list">
+          <li class="header__contact__item">
+            <a href="#" class="second__contact"
               >info@devstudio.com</a
             >
           </li>
-          <li class="header-contact-item">
-            <a href="tel:+380961111111" class="second-contact"
+          <li class="header__contact__item">
+            <a href="tel:+380961111111" class="second__contact"
               >+38 096 111 11 11</a
             >
           </li>
@@ -56,7 +57,7 @@
 <span class="burger-line"></span> 
 </button>  -->
 
-<button burger-modal-open class="burger-btn" aria-label="Відкрити меню">
+<button burger-modal-open class="burger__btn" aria-label="Відкрити меню">
 <svg class="menu">
   <use href="./icons/symbol-defs.svg#menu"></use>
 </svg>
@@ -68,58 +69,58 @@
       <section class="hero"  data-aos="fade-up"
      data-aos-duration="3000">
         <div class="container">
-          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="hero-button" data-modal-open>Замовити послугу</button>
+          <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+          <button class="hero__button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <section class="advantages" data-aos="fade-right"
      data-aos-offset="300"
      data-aos-easing="ease-in-sine">
         <div class="container">
-          <ul class="advantages-list">
-            <li class="advantages-item">
-              <div class="adv-box">
-              <svg class="adv-icon">
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <div class="adv__box">
+              <svg class="adv__icon">
                 <use href="./icons/symbol-defs.svg#moon" ></use>
               </svg>
               </div>
-              <h2 class="advantages-subtitle">УВАГА ДО ДЕТАЛЕЙ</h2>
-              <p class="advantages-text">
+              <h2 class="advantages__subtitle">УВАГА ДО ДЕТАЛЕЙ</h2>
+              <p class="advantages__text">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
-            <li class="advantages-item">
-              <div class="adv-box">
-              <svg class="adv-icon">
+            <li class="advantages__item">
+              <div class="adv__box">
+              <svg class="adv__icon">
                 <use href="./icons/symbol-defs.svg#clock"></use>
               </svg>
               </div>
-              <h2 class="advantages-subtitle">ПУНКТУАЛЬНІСТЬ</h2>
-              <p class="advantages-text">
+              <h2 class="advantages__subtitle">ПУНКТУАЛЬНІСТЬ</h2>
+              <p class="advantages__text">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
             </li>
-            <li class="advantages-item">
-              <div class="adv-box">
-              <svg class="adv-icon">
+            <li class="advantages__item">
+              <div class="adv__box">
+              <svg class="adv__icon">
                 <use href="./icons/symbol-defs.svg#diagram" ></use>
               </svg>
               </div>
-              <h2 class="advantages-subtitle">ПЛАНУВАННЯ</h2>
-              <p class="advantages-text">
+              <h2 class="advantages__subtitle">ПЛАНУВАННЯ</h2>
+              <p class="advantages__text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="advantages-item">
-              <div class="adv-box">
-              <svg class="adv-icon">
+            <li class="advantages__item">
+              <div class="adv__box">
+              <svg class="adv__icon">
                 <use href="./icons/symbol-defs.svg#astronaut"></use>
               </svg>
               </div>
-              <h2 class="advantages-subtitle">СУЧАСНІ ТЕХНОЛОГІЇ</h2>
-              <p class="advantages-text">
+              <h2 class="advantages__subtitle">СУЧАСНІ ТЕХНОЛОГІЇ</h2>
+              <p class="advantages__text">
                 Значимість цих проблем настільки очевидна, що реалізація
                 планових завдань.
               </p>
@@ -131,27 +132,27 @@
      data-aos-offset="300"
      data-aos-easing="ease-in-sine">
         <div class="container">
-          <h2 class="work-title">Чим ми займаємося</h2>
-          <ul class="work-list">
-            <li class="work-item">
+          <h2 class="work__title">Чим ми займаємося</h2>
+          <ul class="work__list">
+            <li class="work__item">
               <img
                 src="./images/Computer.jpg"
                 alt="робота за компютером"
-                class="work-image"
+                class="work__image"
               />
             </li>
-            <li class="work-item">
+            <li class="work__item">
               <img
                 src="./images/telephone.png"
                 alt="робота з телефоном"
-                class="work-image"
+                class="work__image"
               />
             </li>
-            <li class="work-item">
+            <li class="work__item">
               <img
                 src="./images/Digitaldesign.png"
                 alt="робота на айпаді з діджтл дизайном"
-                class="work-image"
+                class="work__image"
               />
             </li>
           </ul>
@@ -161,9 +162,9 @@
      data-aos-offset="300"
      data-aos-easing="ease-in-sine">
         <div class="container">
-          <h2 class="team-title">Наша команда</h2>
-          <ul class="team-list">
-            <li class="team-item">
+          <h2 class="team__title">Наша команда</h2>
+          <ul class="team__list">
+            <li class="team__item">
               <picture>
                 <source srcset="./images/destop/igor-destop@1x.webp 1x, ./images/destop/igor-destop@2x.webp 2x" media="(min-width:1200px)">
                 <source srcset="./images/tablet/igor-tablet@1x.webp 1x, ./images/tablet/igor-tablet@2x.webp 2x" media="(min-width:768px)">
@@ -171,32 +172,32 @@
               <img
                 src="./images/igor.jpg"
                 alt="Product Designer"
-                class="team-image"
+                class="team__image"
               />
               </picture>
               <div class="wrap">
-              <h3 class="team-subtitle">Ігор Дем'яненко</h3>
-              <p class="team-text">Product Designer</p>
+              <h3 class="team__subtitle">Ігор Дем'яненко</h3>
+              <p class="team__text">Product Designer</p>
 
 
-             <div class="team-box">
-              <a class="team-social" href="#">
-                <svg class="team-icon">
+             <div class="team__box">
+              <a class="team__social" href="#">
+                <svg class="team__icon">
                   <use href="./icons/symbol-defs.svg#instagram"></use>
                 </svg>
                 </a>
-                <a class="team-social" href="#">
-                <svg class="team-icon">
+                <a class="team__social" href="#">
+                <svg class="team__icon">
                   <use href="./icons/symbol-defs.svg#twitter"></use>
                 </svg>
                 </a>
-                <a class="team-social" href="#">
-                <svg class="team-icon">
+                <a class="team__social" href="#">
+                <svg class="team__icon">
                   <use href="./icons/symbol-defs.svg#facebook"></use>
                 </svg>
                 </a>
-                <a class="team-social" href="#">
-                <svg class="team-icon">
+                <a class="team__social" href="#">
+                <svg class="team__icon">
                   <use href="./icons/symbol-defs.svg#insta"></use>
                 </svg>
                 </a>
@@ -339,45 +340,45 @@
       </section>
       <section class="clients">
         <div class="container">
-          <h2 class="client-title">Постійні клієнти</h2>
-          <ul class="client-list">
-            <li class="client-item">
-          <svg class="client-icon">
+          <h2 class="client__title">Постійні клієнти</h2>
+          <ul class="client__list">
+            <li class="client__item">
+          <svg class="client__icon">
             <use href="./icons/symbol-defs.svg#yoco"></use>
           </svg>
           </li>
 
 
-          <li class="client-item">
-          <svg class="client-icon">
+          <li class="client__item">
+          <svg class="client__icon">
             <use  href="./icons/symbol-defs.svg#company"></use>
           </svg>
           </li>
 
 
-          <li class="client-item">
-          <svg class="client-icon">
+          <li class="client__item">
+          <svg class="client__icon">
             <use  href="./icons/symbol-defs.svg#second-company"></use>
           </svg>
           </li>
 
 
-          <li class="client-item">
-          <svg class="client-icon">
+          <li class="client__item">
+          <svg class="client__icon">
             <use href="./icons/symbol-defs.svg#logo"></use>
           </svg>
           </li>
 
 
-          <li class="client-item">
-          <svg class="client-icon">
+          <li class="client__item">
+          <svg class="client__icon">
             <use  href="./icons/symbol-defs.svg#brand"></use>
           </svg>
           </li>
 
 
-          <li class="client-item">
-          <svg class="client-icon">
+          <li class="client__item">
+          <svg class="client__icon">
             <use  href="./icons/symbol-defs.svg#tagline"></use>
           </svg>
           </li>
@@ -388,54 +389,54 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <div class="footer-box">
-        <a href="./index.html" class="footer-logo"
-          ><span class="footer-span">Web</span>Studio</a
+        <div class="footer__box">
+        <a href="./index.html" class="footer__logo"
+          ><span class="footer__span">Web</span>Studio</a
         >
         <address class="address">
-          <ul class="footer-list">
+          <ul class="footer__list">
             <li>
-              <a href="#" class="footer-adress"
+              <a href="#" class="footer__adress"
                 >м. Київ, пр-т Лесі Українки, 26</a
               >
             </li>
-            <li><a href="#" class="footer-contact">info@devstudio.com</a></li>
-            <li><a href="#" class="footer-contact">+38 096 111 11 11</a></li>
+            <li><a href="#" class="footer__contact">info@devstudio.com</a></li>
+            <li><a href="#" class="footer__contact">+38 096 111 11 11</a></li>
           </ul>
         </address>
       </div>
 
 
-      <div class="footer-wrap">
-  <h2 class="social-title">приєднуйтесь</h2>
-  <ul class="footer-socials">
-    <li class="socials-items">
+      <div class="footer__wrap">
+  <h2 class="social__title">приєднуйтесь</h2>
+  <ul class="footer__socials">
+    <li class="socials__items">
       <a href="#" class="socials">
-<svg class="footer-icon">
+<svg class="footer__icon">
   <use href="./icons/symbol-defs.svg#instagram"></use>
 </svg>
     </a>
   </li>
 
-    <li class="socials-items">
+    <li class="socials__items">
       <a href="#" class="socials">
-<svg class="footer-icon">
+<svg class="footer__icon">
   <use href="./icons/symbol-defs.svg#twitter"></use>
 </svg>
       </a>
     </li>
 
-    <li class="socials-items">
+    <li class="socials__items">
       <a href="#" class="socials">
-<svg class="footer-icon">
+<svg class="footer__icon">
   <use href="./icons/symbol-defs.svg#facebook"></use>
 </svg>
       </a>
     </li>
 
-    <li class="socials-items">
+    <li class="socials__items">
       <a href="#" class="socials">
-<svg class="footer-icon">
+<svg class="footer__icon">
   <use href="./icons/symbol-defs.svg#insta"></use>
 </svg>
       </a>
@@ -443,14 +444,14 @@
   </ul>
 </div>
 
-<div class="form-box">
-  <h2 class="form-title">Підпишіться на розсилку</h2>
-<form class="footer-form">
-  <label class="footer-label">
-    <input type="text" class="footer-input" placeholder="E-mail">
+<div class="form__box">
+  <h2 class="form__title">Підпишіться на розсилку</h2>
+<form class="footer__form">
+  <label class="footer__label">
+    <input type="text" class="footer__input" placeholder="E-mail">
   </label>
-  <button class="footer-btn">Підписатися
-    <svg class="footer-icon">
+  <button class="footer__btn">Підписатися
+    <svg class="footer__icon">
     <use href="./icons/symbol-defs.svg#telegram"></use>
   </svg></button>
 </form>
@@ -472,71 +473,71 @@
 
 
 
-    <div data-modal class="backdrop is-hidden">
+    <div data-modal class="backdrop is__hidden">
   <div class="modal">
     <button class="close" data-modal-close>X</button>
-    <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
-    <form class="modal-form">
-<label class="modal-label">
+    <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
+    <form class="modal__form">
+<label class="modal__label">
   Ім'я
-  <input type="text" class="modal-input">
+  <input type="text" class="modal__input">
 </label>
 
 
-<label class="modal-label">
+<label class="modal__label">
   Телефон
   <input type="tel" class="modal-input">
 </label>
 
 
-<label class="modal-label">
+<label class="modal__label">
  Пошта
- <input type="email" class="modal-input">
+ <input type="email" class="modal__input">
 </label>
 
 
-<label class="modal-label">
+<label class="modal__label">
   Коментар
-  <textarea name="comment" class="modal-label" placeholder="Введіть текст"></textarea>
+  <textarea name="comment" class="modal__label" placeholder="Введіть текст"></textarea>
 </label>
 
 
     </form>
-    <input type="checkbox" class="checkbox-inp">Погоджуюся з розсилкою та приймаю<a href="#" class="request-link">Умови договору</a></label>
-    <button class="modal-button">Відправити</button>
+    <input type="checkbox" class="checkbox__inp">Погоджуюся з розсилкою та приймаю<a href="#" class="request-link">Умови договору</a></label>
+    <button class="modal__button">Відправити</button>
     </div>
 </div>
-<div data-modal class="backdrop is-hidden">
+<div data-modal class="backdrop is__hidden">
   <div class="modal">
     <button class="close" data-modal-close>X</button>
   </div>
 </div>
 
 
- <div burger-modal class="second-backdrop is-hidden">
-  <div class="burger-modal">
-      <button burger-modal-close class="bg-close">X</button>
-    <ul class="burger-list">
-            <li class="burg-item">
-              <a href="./index.html" class="burger-link">Студія</a>
+ <div burger-modal class="second-backdrop is__hidden">
+  <div class="burger__modal">
+      <button burger-modal-close class="bg__close">X</button>
+    <ul class="burger__list">
+            <li class="burg__item">
+              <a href="./index.html" class="burger__link">Студія</a>
             </li>
-            <li class="burg-item">
-              <a href="./portfolio.html" class="burger-link">Портфоліо</a>
+            <li class="burg__item">
+              <a href="./portfolio.html" class="burger__link">Портфоліо</a>
             </li>
-            <li class="burg-item">
-              <a href="#" class="burger-link">Контакти</a>
+            <li class="burg__item">
+              <a href="#" class="burger__link">Контакти</a>
             </li>
           </ul>
 
 
-          <ul class="bg-list">
-            <li class="bg-item">
-            <a href="tel:+380961111111" class="bg-contact"
+          <ul class="bg__list">
+            <li class="bg__item">
+            <a href="tel:+380961111111" class="bg__contact"
               >+38 096 111 11 11</a
             >
           </li>
-          <li class="bg-item">
-            <a href="#" class="bg-contact"
+          <li class="bg__item">
+            <a href="#" class="bg__contact"
               >info@devstudio.com</a
             >
           </li>

@@ -1,0 +1,122 @@
+.backdrop{
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.modal{
+  width: 100%;
+height: auto;
+  background-color: #fff;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+  transform: translate(-50%,-50%);
+  transition-property: transform;
+  transition-duration: 600ms;
+  padding: 40px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px 0 rgba(0, 0, 0, 0.20);
+}
+.is__hidden{
+opacity: 0;
+  pointer-events: none;
+}
+.close{
+  font-size: 10px;
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  background-color: transparent;
+  border: none;
+}
+.is__hidden .modal{
+  transform: translate(-50%,-900px)scale(0.3);
+}
+.modal__title{
+  color: var(--text-color);
+text-align: center;
+font-size: 20px;
+font-weight: 700;
+line-height: 30px;
+letter-spacing: 0.6px;
+width: 370.0px;
+}
+.modal__form{
+  display: flex;
+  flex-direction: column;
+}
+.modal__label{
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.40px;
+  color: var(--secondary-text-color);
+ margin-top: 12px;
+}
+.modal__input{
+   padding-top: 15px;
+   outline: 1px (--secondary-text-color);
+}
+textarea{
+  padding-bottom: 80px;
+  resize: none;
+}
+.modal__button{
+color: var(--logo-color);
+text-align: center;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 30px;
+letter-spacing: 0.96px;
+padding: 10px 52px;
+background-color: var(--secondary-color);
+color: var(--logo-color);
+border-radius: 4px;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+margin: auto;
+display: block;
+}
+.modal__link{
+  padding-bottom: 30px;
+}
+.checkbox__inp{
+  font-family: Roboto;
+   font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.40px;
+color: var(--secondary-text-color);
+ margin-top: 12px;
+ margin-bottom: 12px;
+}
+.close{
+  font-size: 25px;
+  font-weight: 600;
+
+    @media (min-width: 480px) {
+.modal{
+  width: 450.0px;
+height: 609.0px;
+}
+  }
+    @media (min-width: 768px) {
+.modal{
+width: 528px;
+height: 581px;
+}
+  }
+    @media (min-width: 1200px) {
+.modal{
+width: 528px;
+height: 581px;
+}
+  }
+}

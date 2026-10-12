@@ -1,0 +1,31 @@
+.work {
+  padding-bottom: 93px;
+  display: none;
+}
+.work__title {
+  color: var(--text-color);
+  text-align: center;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  margin-bottom: 50px;
+}
+.work__list {
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+  gap: 30px;
+}
+.work__image {
+  width: 370px;
+  height: 294px;
+
+
+    @media (min-width: 1200px) {
+  .work{
+display: block;
+  }
+  }
+}
