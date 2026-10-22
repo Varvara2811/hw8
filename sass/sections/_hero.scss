@@ -9,6 +9,26 @@
     background-repeat: no-repeat;
   padding-top: 118px;
   padding-bottom: 118px;
+
+
+@media (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  background: 
+  linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)),
+  url(../images/destop/hero-destop@1x.webp);
+} 
+@media (min-width: 768px){
+  background: 
+  linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)),
+  url(../images/tablet/hero-tablet@1x.webp);
+@media (min-device-pixel-ratio: 2),
+       (-webkit-min-device-pixel-ratio: 2),
+       (min-resolution: 192dpi),
+       (min-resolution: 2dppx) {
+    background-image: url(../images/tablet/hero-tablet@2x.webp);
+}
+}
 }
 .hero__section {
   min-height: 60vh;
@@ -17,14 +37,6 @@ background:
   url(../images/mobile/hero-mobile@2x.webp);
   background-size: cover;
   background-position: center;
-}
-@media (min-device-pixel-ratio: 2),
-       (-webkit-min-device-pixel-ratio: 2),
-       (min-resolution: 192dpi),
-       (min-resolution: 2dppx) {
-  .hero{
-    background-image: url(../images/mobile/hero-mobile@2x.webp);
-  }
 }
 .hero__title {
   width: 100%;
@@ -42,6 +54,9 @@ background:
   animation-name: ScaleTitle;
   animation-duration: 1000ms;
   animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    @media (min-width: 480px) {
+    width: 360px;
+  }
 }
 @keyframes ScaleTitle {
   0% {
@@ -77,20 +92,6 @@ background:
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 
 
-
-    @media (min-width: 480px) {
-  .hero__title{
-    width: 360px;
-  }
-  }
-    @media (min-width: 1200px) {
-  .hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
-  background: 
-  linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)),
-  url(../images/destop/hero-destop@1x.webp);
-  }
   .hero__title {
     width: 696px;
     font-size: 44px;
@@ -101,7 +102,6 @@ background:
     width: 216px;
   }
   }
-}
 
 
 
