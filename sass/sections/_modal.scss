@@ -18,23 +18,20 @@ height: auto;
   transition-duration: 600ms;
   padding: 40px;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px 0 rgba(0, 0, 0, 0.20);
-}
-.is__hidden{
-opacity: 0;
-  pointer-events: none;
-}
-.close{
-  font-size: 10px;
-  position: absolute;
-  right: 10px;
-  top: 15px;
-  background-color: transparent;
-  border: none;
-}
-.is__hidden .modal{
-  transform: translate(-50%,-900px)scale(0.3);
-}
-.modal__title{
+   
+  @media (min-width: 480px) {
+  width: 450.0px;
+height: 609.0px;
+  }
+    @media (min-width: 768px) {
+width: 528px;
+height: 581px;
+  }
+      @media (min-width: 1200px) {
+width: 528px;
+height: 581px;
+  }
+&__title{
   color: var(--text-color);
 text-align: center;
 font-size: 20px;
@@ -43,11 +40,11 @@ line-height: 30px;
 letter-spacing: 0.6px;
 width: 370.0px;
 }
-.modal__form{
+&__form{
   display: flex;
   flex-direction: column;
 }
-.modal__label{
+&__label{
   display: flex;
   flex-direction: column;
   font-size: 12px;
@@ -58,15 +55,11 @@ letter-spacing: 0.40px;
   color: var(--secondary-text-color);
  margin-top: 12px;
 }
-.modal__input{
+&__input{
    padding-top: 15px;
    outline: 1px (--secondary-text-color);
 }
-textarea{
-  padding-bottom: 80px;
-  resize: none;
-}
-.modal__button{
+&__button{
 color: var(--logo-color);
 text-align: center;
 font-family: Roboto;
@@ -83,8 +76,25 @@ box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 margin: auto;
 display: block;
 }
-.modal__link{
+&__link{
   padding-bottom: 30px;
+}
+}
+
+.is__hidden{
+opacity: 0;
+  pointer-events: none;
+}
+.is__hidden .modal{
+  transform: translate(-50%,-900px)scale(0.3);
+}
+.close{
+  font-size: 10px;
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  background-color: transparent;
+  border: none;
 }
 .checkbox__inp{
   font-family: Roboto;
@@ -100,23 +110,4 @@ color: var(--secondary-text-color);
 .close{
   font-size: 25px;
   font-weight: 600;
-
-    @media (min-width: 480px) {
-.modal{
-  width: 450.0px;
-height: 609.0px;
-}
-  }
-    @media (min-width: 768px) {
-.modal{
-width: 528px;
-height: 581px;
-}
-  }
-    @media (min-width: 1200px) {
-.modal{
-width: 528px;
-height: 581px;
-}
-  }
 }
