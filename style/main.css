@@ -651,12 +651,12 @@ button {
 .hero {
   display: flex;
   background-color: var(--footer-color);
+  padding-top: 118px;
+  padding-bottom: 118px;
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/hero-mobile@1x.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 118px;
-  padding-bottom: 118px;
 }
 .hero__title {
   width: 100%;
@@ -680,6 +680,14 @@ button {
     width: 360px;
   }
 }
+@media (min-width: 1200px) {
+  .hero__title {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 2.64px;
+  }
+}
 .hero__button {
   display: block;
   margin: 0 auto;
@@ -698,12 +706,6 @@ button {
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
   animation-duration: 1300ms;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-}
-.hero__title {
-  width: 696px;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 2.64px;
 }
 .hero__button {
   width: 216px;
@@ -1013,21 +1015,6 @@ button {
   }
 }
 
-.box {
-  align-items: start;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 15px;
-}
-@media (min-width: 768px) {
-  .box {
-    flex-wrap: nowrap;
-    display: flex;
-    margin-bottom: 50px;
-    justify-content: center;
-  }
-}
-
 .main__button {
   padding-bottom: 6px;
   padding-top: 6px;
@@ -1046,26 +1033,6 @@ button {
   animation-duration: 1200ms;
   animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
 }
-
-@keyframes CrazyButtons {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0;
-  }
-  50% {
-    transform: scale(1.2);
-    opacity: 1;
-  }
-  75% {
-    transform: scale(1.3);
-  }
-  100% {
-    transform: translate(0);
-    opacity: 1;
-  }
-}
 .main__button:hover {
   transition: transform, box-shadow;
   transition-duration: 250ms;
@@ -1076,7 +1043,6 @@ button {
   border-radius: 4px;
   box-shadow: 0 3px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 2px 2px 0 rgba(0, 0, 0, 0.12);
 }
-
 .main__subtitle {
   line-height: 2;
   color: var(--text-color);
@@ -1087,18 +1053,6 @@ button {
   letter-spacing: 1.08px;
   margin-bottom: 4px;
 }
-
-.wrapper {
-  padding-top: 20px;
-  padding-bottom: 19px;
-  padding-left: 23px;
-  padding-right: 23px;
-}
-
-.content__wrapper {
-  overflow: hidden;
-}
-
 .main__list {
   display: grid;
   grid-template-columns: 100%;
@@ -1120,17 +1074,76 @@ button {
     justify-content: center;
   }
 }
-
 .main__item {
   outline: 1px solid #eee;
 }
-
 .main__item:hover {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 1px 4px 6px 0 rgba(0, 0, 0, 0.16);
   transition: box-shadow, transform;
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition-duration: 300ms;
   transition-timing-function: ease;
+}
+.main__item:hover .text {
+  transform: translateY(0);
+}
+.main__image {
+  width: 100%;
+  height: auto;
+}
+.main__text {
+  line-height: 1, 8;
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.48px;
+}
+
+@keyframes CrazyButtons {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  75% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+.box {
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+@media (min-width: 768px) {
+  .box {
+    flex-wrap: nowrap;
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+  }
+}
+
+.wrapper {
+  padding-top: 20px;
+  padding-bottom: 19px;
+  padding-left: 23px;
+  padding-right: 23px;
+}
+
+.content__wrapper {
+  overflow: hidden;
 }
 
 .text {
@@ -1155,25 +1168,6 @@ button {
   transition: transform 0.6s ease;
 }
 
-.main__item:hover .text {
-  transform: translateY(0);
-}
-
 .content__wrapper {
   position: relative;
-}
-
-.main__image {
-  width: 100%;
-  height: auto;
-}
-
-.main__text {
-  line-height: 1, 8;
-  color: var(--secondary-text-color);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 30px;
-  letter-spacing: 0.48px;
 }/*# sourceMappingURL=main.css.map */

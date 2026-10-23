@@ -1,15 +1,14 @@
 .hero {
   display: flex;
   background-color: var(--footer-color);
-       // MOBILE
-        background: 
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background: 
   linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)),
   url(../images/mobile/hero-mobile@1x.webp);
    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-  padding-top: 118px;
-  padding-bottom: 118px;
      
 &__title {
   width: 100%;
@@ -29,6 +28,12 @@
   animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
     @media (min-width: 480px) {
     width: 360px;
+  }
+   @media (min-width: 1200px) {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 2.64px;
   }
 }
 &__button {
@@ -50,12 +55,7 @@
   animation-duration: 1300ms;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
-&__title {
-    width: 696px;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 2.64px;
-  }
+
 &__button {
     width: 216px;
   }

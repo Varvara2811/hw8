@@ -6,19 +6,8 @@
   padding-top: 94px;
       }
 }
-.box {
-  align-items: start;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 15px;
-      @media (min-width: 768px) {
-    flex-wrap: nowrap;
-    display: flex;
-  margin-bottom: 50px;
-  justify-content: center;
-}
-}
-.main__button {
+.main{
+&__button {
   padding-bottom: 6px;
   padding-top: 6px;
   padding-left: 22px;
@@ -35,6 +24,70 @@
   animation-name: CrazyButtons;
   animation-duration: 1200ms;
   animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+}
+&__button:hover{
+  transition: transform,box-shadow;
+  transition-duration: 250ms;
+  transform: scale(1.05);
+  transition-timing-function: ease;
+  background-color: var(--secondary-color);
+  color: var(--logo-color);
+  border-radius: 4px;
+  box-shadow: 0 3px 1px 0 rgba(0, 0, 0, 0.10), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 2px 2px 0 rgba(0, 0, 0, 0.12);
+}
+&__subtitle {
+  line-height: 2;
+  color: var(--text-color);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 1.08px;
+  margin-bottom: 4px;
+}
+&__list {
+ display: grid;
+  grid-template-columns: 100%;
+  gap: 30px;
+      @media (min-width: 480px) {
+ grid-template-columns: repeat(1,1fr);
+      }
+          @media (min-width: 768px) {
+ grid-template-columns: repeat(2,1fr);
+  }
+      @media (min-width: 1200px) {
+ grid-template-columns: repeat(3,1fr);
+ justify-content: center;
+  }
+}
+&__item {
+  outline: 1px solid #eee;
+  &:hover{
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 1px 4px 6px 0 rgba(0, 0, 0, 0.16);
+ transition: box-shadow,transform;
+ transform: scale(1.1);
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+}
+&:hover {
+  .text {
+transform: translateY(0);
+  }
+}
+}
+&__image {
+  width: 100%;
+  height: auto;
+}
+&__text {
+  line-height: 1,8;
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.48px;
+}
 }
 @keyframes CrazyButtons {
   0% {
@@ -55,25 +108,17 @@
     opacity: 1;
   }
 }
-.main__button:hover{
-  transition: transform,box-shadow;
-  transition-duration: 250ms;
-  transform: scale(1.05);
-  transition-timing-function: ease;
-  background-color: var(--secondary-color);
-  color: var(--logo-color);
-  border-radius: 4px;
-  box-shadow: 0 3px 1px 0 rgba(0, 0, 0, 0.10), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 2px 2px 0 rgba(0, 0, 0, 0.12);
+.box {
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 15px;
+      @media (min-width: 768px) {
+    flex-wrap: nowrap;
+    display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
 }
-.main__subtitle {
-  line-height: 2;
-  color: var(--text-color);
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 36px;
-  letter-spacing: 1.08px;
-  margin-bottom: 4px;
 }
 .wrapper {
   padding-top: 20px;
@@ -83,31 +128,6 @@
 }
 .content__wrapper{
   overflow: hidden;
-}
- .main__list {
- display: grid;
-  grid-template-columns: 100%;
-  gap: 30px;
-      @media (min-width: 480px) {
- grid-template-columns: repeat(1,1fr);
-      }
-          @media (min-width: 768px) {
- grid-template-columns: repeat(2,1fr);
-  }
-      @media (min-width: 1200px) {
- grid-template-columns: repeat(3,1fr);
- justify-content: center;
-  }
-}
-.main__item {
-  outline: 1px solid #eee;
-}
-.main__item:hover{
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 1px 4px 6px 0 rgba(0, 0, 0, 0.16);
- transition: box-shadow,transform;
- transform: scale(1.2);
-  transition-duration: 300ms;
-  transition-timing-function: ease;
 }
 .text {
   position: absolute;
@@ -130,24 +150,6 @@
  transform: translateY(600px);
   transition: transform 0.6s ease;
 }
-.main__item:hover {
-  .text {
-transform: translateY(0);
-  }
-}
 .content__wrapper {
   position: relative;
-}
-.main__image {
-  width: 100%;
-  height: auto;
-}
-.main__text {
-  line-height: 1,8;
-  color: var(--secondary-text-color);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 30px;
-  letter-spacing: 0.48px;
 }
