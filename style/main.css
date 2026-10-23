@@ -658,6 +658,23 @@ button {
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media (min-width: 768px) {
+  .hero .hero {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/hero-tablet@1x.webp);
+  }
+}
+@media (min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi), (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero .hero {
+    background-image: url(../images/tablet/hero-tablet@2x.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/destop/hero-destop@1x.webp);
+  }
+}
 .hero__title {
   width: 100%;
   margin: 0 auto;
