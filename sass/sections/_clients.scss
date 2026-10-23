@@ -22,25 +22,37 @@ width: 41.0px;
 height: 46.7px;
 text-align: center;
 align-items: center;
+margin: 0 auto;
 fill: var(--icon-fill);
 }
 &__item{
   padding: 22.4px 65px;
   border-radius: 4px;
+  width: 100%;
 border: 1px solid var(--icon-fill);
 &:nth-child(4) & {
 width: 70.4px;
 height: 40.6px;
+align-items: center;
+justify-content: center;
+display: flex;
 }
 }
 &__list{
       display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
     justify-content: center;
     gap: 30px;
+     @media (max-width: 480px) {
+      grid-template-columns: repeat(1,1fr);
+     }
           @media (min-width: 480px) {
  flex-direction: column;  
  flex-wrap: wrap;
+      grid-template-columns: repeat(2,1fr);
+  }
+  @media (min-width: 768px) {
+      grid-template-columns: repeat(3,1fr);
   }
 @media (min-width: 1200px){
   grid-template-columns: repeat(6,1fr);
