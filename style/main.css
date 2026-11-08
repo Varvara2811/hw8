@@ -650,29 +650,27 @@ button {
 
 .hero {
   display: flex;
-  background-color: var(--footer-color);
   padding-top: 118px;
   padding-bottom: 118px;
-  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/hero-mobile@1x.webp);
+  background-color: var(--footer-color);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url(../images/mobile/hero-mobile@1x.webp) 1x, url(../images/mobile/hero-mobile@2x.webp) 2x);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), image-set(url(../images/mobile/hero-mobile@1x.webp) 1x, url(../images/mobile/hero-mobile@2x.webp) 2x);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 @media (min-width: 768px) {
-  .hero .hero {
-    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/hero-tablet@1x.webp);
-  }
-}
-@media (min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi), (min-width: 768px) and (min-resolution: 2dppx) {
-  .hero .hero {
-    background-image: url(../images/tablet/hero-tablet@2x.webp);
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url(../images/tablet/hero-tablet@1x.webp) 1x, url(../images/tablet/hero-tablet@2x.webp) 2x);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), image-set(url(../images/tablet/hero-tablet@1x.webp) 1x, url(../images/tablet/hero-tablet@2x.webp) 2x);
   }
 }
 @media (min-width: 1200px) {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/destop/hero-destop@1x.webp);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url(../images/destop/hero-destop@1x.webp) 1x, url(../images/destop/hero-destop@2x.webp) 2x);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), image-set(url(../images/destop/hero-destop@1x.webp) 1x, url(../images/destop/hero-destop@2x.webp) 2x);
   }
 }
 .hero__title {
@@ -723,8 +721,6 @@ button {
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
   animation-duration: 1300ms;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-}
-.hero__button {
   width: 216px;
 }
 
@@ -732,11 +728,8 @@ button {
   0% {
     transform: scale(1);
   }
-  25% {
+  50% {
     transform: scale(1.2);
-  }
-  25% {
-    transform: scale(1.3);
   }
   100% {
     transform: scale(1);
@@ -744,21 +737,19 @@ button {
 }
 @keyframes BigButton {
   0% {
-    background-color: var(--secondary-color);
-  }
-  25% {
-    background-color: #a2d5ff;
+    transform: scale(1);
   }
   50% {
-    background-color: #ffffff;
-    transform: scale(1.4);
-  }
-  75% {
-    background-color: #3aa5fd;
-    transform: scale(1.3);
+    transform: scale(1.2);
   }
   100% {
     transform: scale(1);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero__title,
+  .hero__button {
+    animation: none;
   }
 }
 .backdrop {

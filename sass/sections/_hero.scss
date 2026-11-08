@@ -1,40 +1,39 @@
 .hero {
   display: flex;
-  background-color: var(--footer-color);
   padding-top: 118px;
   padding-bottom: 118px;
-  background: 
-  linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)),
-  url(../images/mobile/hero-mobile@1x.webp);
-   background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-color: var(--footer-color); // fallback until the image loads
+  background-image:
+    linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    image-set(
+      url(../images/mobile/hero-mobile@1x.webp) 1x,
+      url(../images/mobile/hero-mobile@2x.webp) 2x
+    );
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 
-    // tablet
-@media (min-width: 768px) {
-.hero{
-  background: 
-  linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)),
-  url(../images/tablet/hero-tablet@1x.webp);
-}
-@media (min-device-pixel-ratio: 2),
-       (-webkit-min-device-pixel-ratio: 2),
-       (min-resolution: 192dpi),
-       (min-resolution: 2dppx) {
-  .hero{
-    background-image: url(../images/tablet/hero-tablet@2x.webp);
+  // tablet
+  @media (min-width: 768px) {
+    background-image:
+      linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      image-set(
+        url(../images/tablet/hero-tablet@1x.webp) 1x,
+        url(../images/tablet/hero-tablet@2x.webp) 2x
+      );
   }
-}
-}
 
-    // Destop
-     @media (min-width: 1200px) {
+  // desktop
+  @media (min-width: 1200px) {
     padding-top: 200px;
     padding-bottom: 200px;
-  background: 
-  linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)),
-  url(../images/destop/hero-destop@1x.webp);
-     }
+    background-image:
+      linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      image-set(
+        url(../images/destop/hero-destop@1x.webp) 1x,
+        url(../images/destop/hero-destop@2x.webp) 2x
+      );
+  }
 &__title {
   width: 100%;
   margin: 0 auto;
@@ -79,44 +78,24 @@
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
   animation-duration: 1300ms;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+      width: 216px;
 }
-
-&__button {
-    width: 216px;
-  }
 }
 @keyframes ScaleTitle {
-  0% {
-    transform: scale(1);
-  }
-  25% {
-    transform: scale(1.2);
-  }
-  25% {
-    transform: scale(1.3);
-  }
-  100% {
-    transform: scale(1);
-  }
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.2);}
+  100% { transform: scale(1); }
 }
 
-
 @keyframes BigButton {
-  0% {
-    background-color: var(--secondary-color);
-  }
-  25% {
-    background-color: #a2d5ff;
-  }
-  50% {
-    background-color: #ffffff;
-    transform: scale(1.4);
-  }
-  75% {
-    background-color: #3aa5fd;
-    transform: scale(1.3);
-  }
-  100% {
-    transform: scale(1);
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__title,
+  .hero__button {
+    animation: none;
   }
 }
